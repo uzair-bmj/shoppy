@@ -1,0 +1,26 @@
+.herosection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    padding-top: 25vh;
+}
+
+.herotxt {
+    width: 40vw;
+}
+
+.heroimg img {
+    width: 300px;
+}
+
+@media screen and (max-width : 600px) {
+    .herosection {
+        position: relative;
+        z-index: 900;
+    }
+
+}
