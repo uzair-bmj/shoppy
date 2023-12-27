@@ -1,0 +1,126 @@
+.navsection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.5px solid rgba(235, 230, 230, 0.815);
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+
+
+}
+h2{ 
+   color:  rgba(53, 53, 241, 0.829);
+   font-weight: bold;
+   padding-top: 5px;
+   cursor: pointer;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navbar input{
+    width: 30vw;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-width: 1px;
+
+}
+.navbar input:focus{
+    outline: none;
+}
+.navbar input:hover{
+    box-shadow: 0 2px 5px 0 rgba(145, 145, 223, 0.425) , 2px 0 5px 0 rgba(145, 145, 223, 0.425);
+}
+.items{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.itemsdiv ul li{
+    cursor: pointer;
+}
+.itemsdiv ul li:hover{
+    color: rgba(53, 53, 241, 0.829);
+    border-bottom: 2px solid rgba(53, 53, 241, 0.829);
+}
+.itemsdiv{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+
+}
+.navresponsive{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* background-color: rgb(218, 215, 215); */
+    /* border-radius: 30px; */
+    box-shadow: 0 2px 5px 2px rgba(172, 172, 247, 0.829);
+    padding-top: 15px;
+    margin: auto;
+    position: fixed;
+    /* top: 90%; */
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    padding-right: 20px;
+    width: 100%;
+    /* height: 12vh; */
+    display: none;  
+}
+.itemsres{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .navresponsive{
+        
+        display: block;
+        /* gap: 20px; */
+    }
+    .itemsdiv{
+        display: none;
+    }
+    .navbar input{
+        display: none   ;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .itemsres{
+        font-size: 12px;
+    }
+}
+/* @media screen and (max-width: 320px) {
+    .navresponsive{
+       top: 87%;
+       text-align: center;
+       padding-right: 30px;
+
+    }
+    .itemsres{
+        font-size: 10px;
+    }
+} */
